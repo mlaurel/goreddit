@@ -15,3 +15,10 @@ type Post struct {
 	Content  string    `db:"content"`
 	Votes    int       `db:"votes"`
 }
+
+type Comment struct {
+	ID      uuid.UUID `db:"id"`
+	PostID  uid.UUID  `db:"post_id"`
+	Content string    `db:"content"`
+	Votes   int       `db:"votes"`
+}
